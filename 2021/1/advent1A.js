@@ -1,6 +1,5 @@
-import fs from 'fs';
-// read the file
-const fileContent = fs.readFileSync(`C:\\Users\\tbolivar\\Desktop\\input.txt`);
+const fs = require('fs')// read the file
+const fileContent = fs.readFileSync(`.\\2021\\1\\input.txt`);
 // split the file into an array of strings
 const array = fileContent.toString().split('\n')
 let counter = 0
