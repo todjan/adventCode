@@ -1,6 +1,6 @@
-import {readFileSync} from 'fs';
+const {readFileSync} = require('fs')
 // read the file
-const fileContent = readFileSync(`C:\\Users\\tbolivar\\Desktop\\input.txt`);
+const fileContent = readFileSync(`.\\2021\\2\\input.txt`);
 // split the file into an array of strings
 const array = fileContent.toString().split('\n')
 
@@ -23,8 +23,7 @@ for (let i = 0; i < array.length; i++) {
         countDown += parseInt(number, 10)
     }
 }
-const aimUpAndDown = (countDown - countUp)
-
-const result = countForward * (countDown - countUp)
+const aimUpAndDown = countDown - countUp
+const result = countForward * aimUpAndDown
 
 console.log(result);
