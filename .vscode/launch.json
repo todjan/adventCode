@@ -10,6 +10,12 @@
             "request": "launch",
             "program": "${file}",
             "console": "integratedTerminal"
+        },
+        {
+            "name": "node",
+            "type": "node",
+            "request": "attach",
+            "port": 9229
         }
     ]
 }
